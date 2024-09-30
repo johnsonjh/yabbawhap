@@ -1,5 +1,5 @@
-CC=cc
-CCOPTS=-O2 -DTYPE=int -DPTRS -DBZERO -DRANDINIT="getpid()"
+CC?=cc
+CCOPTS=-O2 -DPTRS -DTYPE=int -DNODEMAX=500000 -DMOD=1048576 -DNODENUM=65533 -DBZERO -DRANDINIT="getpid()"
 
 # These options would be best to compile ``large'' yabba and unyabba
 # on a Sun or other generic 32-bit UNIX machine:

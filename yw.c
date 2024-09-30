@@ -11,6 +11,9 @@ you may be infringing upon a patent.\n\
 #endif
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <unistd.h>
 extern long atol();
 extern int getopt();
 extern char *optarg;
@@ -135,7 +138,7 @@ char **ss;
  (void) exit(x);
 }
 
-main(argc,argv)
+int main(argc,argv)
 int argc;
 char *argv[];
 {

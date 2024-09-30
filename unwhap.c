@@ -6,6 +6,9 @@ you may be infringing upon a patent.\n\
 ";
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <unistd.h>
 extern long atol();
 extern int getopt();
 extern char *optarg;
@@ -70,7 +73,7 @@ char **s;
 savein = in; saveout = out; \
 if (flagverbose >= 2) goaheadandbeverbose(); (void) exit(2); }
 
-main(argc,argv)
+int main(argc,argv)
 int argc;
 char *argv[];
 {
